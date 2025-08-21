@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    width: 100%;
+}
+
+.header {
+    background: linear-gradient(to left, #292bc2, #e7aae9);
+    margin: 0;
+    padding: 20px 40px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    animation: rainbowGlow 3s linear infinite;
+}
+
+@keyframes rainbowGlow {
+    0% {background-position: 0;}
+    100% {background-position: 200% 0;}
+}
+
+.header h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: violet;
+    font-weight: bold;
+    border-bottom: 2px solid violet;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.profile-section {
+    max-width: 600px;
+    width: 100%;
+    background-color: #f5efef;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px grey;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-section .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a11cb;
+    margin: 0 0 5px 0;
+    line-height: 1.2;
+}
+
+.profile-section .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6a11cb;
+    margin: 0;
+}
+
+.view-sched {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #6a11cb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-sched:hover {
+    background-color: #4a0fae;
+}
+
+.schedule-section {
+    max-width: auto;
+    width: 100%;
+    background-color: #f5efef;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px grey;
+    padding: 20px;
+}
+
+.plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.plan-table td, .plan-table th {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.plan-table thead {
+    background-color: #6a11cb;
+    color: white;
+}
+
+.plan-table tbody tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+.plan-table tbody tr:hover {
+    background-color: #e7e7ff;
+}
+
+.edit-button, .delete-button {
+    padding: 7px 7px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0 0 3px;
+    transition: background-color 0.3s ease;
+}
+.action-btn {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-button {
+    background-color: #4caf50;
+}
+
+.edit-button:hover {
+    background-color: #3d8b40;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.delete-button:hover {
+    background-color: #c62828;
+}
+
+.set-sched {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background: #4a0fae;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0 5px 2px;
+}

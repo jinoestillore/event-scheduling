@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+}
+
+.section {
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 10px black;
+    border-radius: 15px;
+    margin: auto;
+    width: 75%;
+    margin-top: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightseagreen;
+    box-shadow: 1px 3px 10px black;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav li {
+    margin: 10px 20px 10px 20px;
+}
+
+.profileAndName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileAndName li {
+    margin: 2px;
+}
+
+.profile-nav {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.nav a {
+    color: black;
+}
+
+.nav h1 {
+    margin: 0;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.profile {
+    display: flex;
+    width: 270px; 
+    height: 250px;
+    border: 2px solid black; 
+    border-radius: 50%;
+    margin: auto;
+}
+
+.sched-box {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sched-box button {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.sched-box button:hover {
+    background-color: white;
+}
+
+.set-sched {
+    background-color: lightgreen;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.view-sched {
+    background-color: rgb(196, 196, 238);
+}
+
+.sched-box-row {
+    display: flex;
+    flex-flow: column;
+}
+
+.schedule-section {
+    display: flex !important;
+    flex-flow: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 20px;
+}
+
+.schedule-section.hidden {
+    display: none !important;
+}
+
+table {
+    border-collapse: collapse;
+    outline: 2px solid black;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.edit-button, .delete-button {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+.edit-button {
+    background-color: lightskyblue;
+    color: black;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.delete-button {
+    background-color: lightcoral;
+    color: black;
+}
+
+.sched-box {
+    margin-top: 20px;
+}
+

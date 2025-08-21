@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    width: 100%;
+}
+
+.header {
+    background: linear-gradient(to left, #292bc2, #e7aae9);
+    margin: 0;
+    padding: 20px 40px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    animation: rainbowGlow 3s linear infinite;
+}
+
+@keyframes rainbowGlow {
+    0% {background-position: 0;}
+    100% {background-position: 200% 0;}
+}
+
+.nav {
+    margin: 0;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: violet;
+    font-weight: bold;
+    border-bottom: 2px solid violet;
+}
+
+.introduction {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.opening {
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    color: black;
+    background-color: #f5efef;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 10px grey;
+}
+
+.opening h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+    background: linear-gradient(to right, #292bc2, #eb63f0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.opening p {
+    font-size: 35px;
+    margin: 0;
+}
+
+.opening .cta {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    background: #4a0fae;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.animatedTyping {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    animation: typing 2s steps(25, end), blink .5s step-end infinite;
+}
+
+@keyframes blink {
+    from {border-color: transparent;}
+    to {border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 70%;}
+}
